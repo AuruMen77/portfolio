@@ -32,7 +32,6 @@ const Skills = () => {
                         <SkillEntry icon={FaLaravel} color="text-red-500" label="Laravel" />
                         <SkillEntry icon={FaNode} color="text-green-500" label="Node" />
                         <SkillEntry textIcon="express" color ="text-slate-500" label ="Express"/>
-                        <SkillEntry textIcon="express" color ="text-slate-500" label ="Express"/>
                     </CardContent>
                 </Card>
                 <Card className="rounded-lg shadow-lg ">

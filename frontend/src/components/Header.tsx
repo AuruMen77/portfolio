@@ -1,4 +1,3 @@
-import { AspectRatio } from "./ui/aspect-ratio";
 import { useState, useEffect } from "react";
 import logo from "../assets/aulogo.png";
 import { Link as ScrollLink } from 'react-scroll';
@@ -25,7 +24,7 @@ const Header = () => {
             </div>
             <div className="mt-[3vh] mr-10 text-xl">
                 <div className="flex flex-col md:flex-row gap-2 md:gap-10">
-                    <ScrollLink to="header" smooth={true} duration={500} >
+                    <ScrollLink to="hero" smooth={true} duration={500} >
                         Home
                     </ScrollLink>
                     <ScrollLink to="main-body" smooth={true} duration={500} offset={offsetInPixels}>

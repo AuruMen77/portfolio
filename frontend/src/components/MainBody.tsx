@@ -4,7 +4,7 @@ import Experience from "./Experience";
 
 const MainBody = () => {
   return (
-    <div className="flex flex-col text-center  pt-10">
+    <div className="flex flex-col text-center pt-10">
       <h1 className="text-4xl font-sans font-bold text-blue-500">
         Hello, I am Azzedine
       </h1>

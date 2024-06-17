@@ -12,7 +12,7 @@ import { SiCloudinary } from "react-icons/si";
 const HomePage = () => {
   return (
     <>
-      <div className="flex flex-col gap-20 py-20 ">
+      <div className="flex flex-col gap-20 py-10 ">
         <div id="main-body">
           <MainBody />
         </div>

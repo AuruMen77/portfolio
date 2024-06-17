@@ -27,11 +27,11 @@ const Skills = () => {
                     <CardHeader>
                         <CardTitle className="text-center">Backend</CardTitle>
                     </CardHeader>
-                    <CardContent className="grid grid-cols-2 justify-items-center">
+                    <CardContent className="grid grid-cols-2 justify-items-center ">
                         <SkillEntry icon={FaPhp} color="text-purple-500" label="PHP" />
                         <SkillEntry icon={FaLaravel} color="text-red-500" label="Laravel" />
                         <SkillEntry icon={FaNode} color="text-green-500" label="Node" />
-                        <SkillEntry textIcon="express" color ="text-slate-500" label ="Express"/>
+                        <SkillEntry textIcon="ex" color ="text-slate-500" label ="Express"/>
                     </CardContent>
                 </Card>
                 <Card className="rounded-lg shadow-lg ">

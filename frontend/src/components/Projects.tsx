@@ -44,7 +44,7 @@ const Projects = ({
         <AspectRatio ratio={16 / 10} className="border shadow mb-5">
           {
             <img
-              src={getImageUrl(imagePath)}
+              src={imagePath}
               alt={title}
               className="w-full object-cover"
             />

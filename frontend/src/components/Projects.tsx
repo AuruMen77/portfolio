@@ -8,7 +8,6 @@ import {
   CardHeader,
   CardTitle,
 } from "./ui/card";
-import getImageUrl from "../utils/image-import-util.ts";
 import { ReactNode } from "react";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";

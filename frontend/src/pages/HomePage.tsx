@@ -8,7 +8,8 @@ import { SiMysql } from "react-icons/si";
 import { FaCcStripe } from "react-icons/fa6";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiCloudinary } from "react-icons/si";
-
+import FoodOrder from "../assets/project-mern-food-ordering.png";
+import Scheduler from "../assets/project-scheduler.png";
 const HomePage = () => {
   return (
     <>
@@ -29,7 +30,7 @@ const HomePage = () => {
           <Projects
             title="Foodmanazz"
             description="A food ordering application with searching capabilities"
-            imagePath="../assets/project-mern-food-ordering.png"
+            imagePath={FoodOrder}
             explanation="This food ordering-app is built with React for the frontend framework and Node for the backend, it uses express to manage the routes.
         Additionally it uses third-party applications such as Stripe for the payment, Cloudinary for saving images, and MongoDB for the database"
             link="https://mern-food-ordering-app-frontend-y8ki.onrender.com"
@@ -64,7 +65,7 @@ const HomePage = () => {
           <Projects
             title="Ground Zero - Scheduler"
             description="A scheduler with a calendar view"
-            imagePath="../assets/project-scheduler.png"
+            imagePath={Scheduler}
             explanation="This is built using React for front end and Laravel with Breeze for the scaffolding. It also utilizes FullCalendar for the calendar view. "
             link=""
             sourceCode="https://github.com/AuruMen77/Ground0-Scheduler"

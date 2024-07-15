@@ -7,8 +7,9 @@ type Props = {
   scrollTo: string;
   growSize: string;
   offset?: boolean;
+  active?: boolean;
 };
-const NavBarItem = ({ text, scrollTo, offset = false, growSize }: Props) => {
+const NavBarItem = ({ text, scrollTo, offset = false, growSize, active }: Props) => {
   const [offsetInPixels, setOffsetInPixels] = useState(
     (-10 * window.innerHeight) / 100
   );
@@ -32,6 +33,7 @@ const NavBarItem = ({ text, scrollTo, offset = false, growSize }: Props) => {
         {
           "hover:text-sm": growSize === "sm",
           "hover:text-2xl": growSize === "2xl",
+          "text-blue-500": active,
         }
       )}
       to={scrollTo}

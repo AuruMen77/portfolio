@@ -5,7 +5,7 @@ import MobileNav from "./MobileNav";
 import useVisibleSection from '../hooks/useVisibleSection';
 
 const Header = () => {
-  const sectionIds = ['hero', 'main-body', 'skills', 'projects', 'contacts'];
+  const sectionIds = ['hero', 'main-body', 'skills', 'project-content', 'contacts'];
   const visibleSections = useVisibleSection(sectionIds);
 
   return (
@@ -23,7 +23,7 @@ const Header = () => {
           <NavBarItem growSize="2xl" scrollTo="hero" text="Home" active={visibleSections.includes('hero')} />
           <NavBarItem growSize="2xl" scrollTo="main-body" text="About" offset active={visibleSections.includes('main-body')} />
           <NavBarItem growSize="2xl" scrollTo="skills" text="Skills" offset active={visibleSections.includes('skills')} />
-          <NavBarItem growSize="2xl" scrollTo="projects" text="Projects" offset active={visibleSections.includes('projects')} />
+          <NavBarItem growSize="2xl" scrollTo="projects" text="Projects" offset active={visibleSections.includes('project-content')} />
           <NavBarItem growSize="2xl" scrollTo="contacts" text="Contact" offset active={visibleSections.includes('contacts')} />
         </div>
       </div>

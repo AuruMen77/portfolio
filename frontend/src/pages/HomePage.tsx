@@ -26,7 +26,7 @@ const HomePage = () => {
         >
           Projects
         </div>
-        <div className="grid md:grid-cols-2 gap-10 mt-[-50px]">
+        <div className="grid md:grid-cols-2 gap-10 mt-[-50px]" id="project-content">
           <Projects
             title="Foodmanazz"
             description="A food ordering application with searching capabilities"

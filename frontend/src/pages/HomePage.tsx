@@ -33,7 +33,7 @@ const HomePage = () => {
             imagePath={FoodOrder}
             explanation="This food ordering-app is built with React for the frontend framework and Node for the backend, it uses express to manage the routes.
         Additionally it uses third-party applications such as Stripe for the payment, Cloudinary for saving images, and MongoDB for the database"
-            link="https://mern-food-ordering-app-frontend-y8ki.onrender.com"
+            link="https://mern-food-ordering-app-frontend-bnlz.onrender.com/"
             sourceCode="https://github.com/AuruMen77/mern-food-ordering-app-frontend.git"
           >
             <p className="text-lg tracking-tighter text-center">Made with:</p>

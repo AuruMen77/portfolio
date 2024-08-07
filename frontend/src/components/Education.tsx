@@ -15,7 +15,7 @@ const Education = () => {
                     <FaMedal className="w-5 h-5 text-yellow-500" />
                     <h3 className="ml-2 ">Magna Cum Laude</h3>
                 </div>
-                <p className="mt-10 text-justify italic">With the value of Magis inculcated in me, I aim to do my best and continuously improve</p>
+                <p className="mt-10 text-justify italic">A university that molded my values and principles. A haven where I found valuable connections and gained life-changing experiences</p>
             </CardContent>
             <CardFooter>
             </CardFooter>

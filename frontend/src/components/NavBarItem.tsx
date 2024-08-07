@@ -5,11 +5,11 @@ import classNames from "classnames";
 type Props = {
   text: string;
   scrollTo: string;
-  growSize: string;
+  growSize?: string;
   offset?: boolean;
   active?: boolean;
 };
-const NavBarItem = ({ text, scrollTo, offset = false, growSize, active }: Props) => {
+const NavBarItem = ({ text, scrollTo, offset = false, active }: Props) => {
   const [offsetInPixels, setOffsetInPixels] = useState(
     (-10 * window.innerHeight) / 100
   );
@@ -29,10 +29,8 @@ const NavBarItem = ({ text, scrollTo, offset = false, growSize, active }: Props)
   return (
     <ScrollLink
       className={classNames(
-        "py-1 px-5 hover:shadow-md hover:rounded-lg hover:cursor-pointer",
+        "py-1 px-5 hover:shadow-md hover:underline hover:cursor-pointer",
         {
-          "hover:text-sm": growSize === "sm",
-          "hover:text-2xl": growSize === "2xl",
           "text-blue-500": active,
         }
       )}

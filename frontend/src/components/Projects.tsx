@@ -41,7 +41,7 @@ const Projects = ({
         </CardDescription>
       </CardHeader>
       <CardContent className="flex flex-col">
-        <AspectRatio ratio={16 / 10} className="border shadow mb-5">
+        <AspectRatio ratio={16 / 10} className="border shadow mb-5 hover:scale-110">
           {
             <img
               src={imagePath}

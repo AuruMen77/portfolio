@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 
 function useVisibleSection(sectionIds: string[]): string[] {
   const [visibleSections, setVisibleSections] = useState<string[]>([]);
@@ -6,8 +6,8 @@ function useVisibleSection(sectionIds: string[]): string[] {
   useEffect(() => {
     const options = {
       root: null,
-      rootMargin: '0px',
-      threshold: 0.5,
+      rootMargin: "0px",
+      threshold: 0.2,
     };
 
     const observer = new IntersectionObserver((entries) => {

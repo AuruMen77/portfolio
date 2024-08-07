@@ -1,5 +1,7 @@
+import { IconType } from 'react-icons';
+
 type Props = {
-  icon?: React.ComponentType<React.SVGProps<SVGSVGElement>>;
+  icon?: IconType;
   textIcon?: string;
   color: string;
   label: string;

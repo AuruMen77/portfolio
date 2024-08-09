@@ -1,3 +1,4 @@
+/*eslint-env node*/
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ["class"],
@@ -68,6 +69,10 @@ module.exports = {
         sm: "calc(var(--radius) - 4px)",
       },
       keyframes: {
+        "scaleAnimation": {
+          '0%': { transform: 'scale(1)' },
+          '100%': { transform: 'scale(0.50)' },
+        },
         "accordion-down": {
           from: { height: "0" },
           to: { height: "var(--radix-accordion-content-height)" },
@@ -80,6 +85,7 @@ module.exports = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        'scale-transition': 'scaleAnimation  1s ease-in-out 4s infinite ',
       },
     },
   },

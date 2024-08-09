@@ -81,7 +81,7 @@ const Skills = () => {
                 id={skill.title}
                 className={classNames(" rounded-lg shadow-lg", {
                   "scale-50 order-0": (active + 2) % 3 === index,
-                  "transition-transform duration-1000 scale-150 order-1 ":
+                  "transition-transform duration-1000 scale-105 md:scale-150 order-1 ":
                     active === index,
                   "scale-50 order-2": (active + 1) % 3 === index,
                 })}

@@ -73,7 +73,12 @@ const Skills = () => {
         Skills
       </h1>
       <div className="flex items-center">
-        <ChevronLeftIcon className="mr-2 size-10" onClick={()=>setActive((prevActive) => (prevActive === 0 ? 2 : prevActive - 1))}/>
+        <ChevronLeftIcon
+          className="text-slate-400 hover:text-slate-700 mr-2 size-10"
+          onClick={() =>
+            setActive((prevActive) => (prevActive === 0 ? 2 : prevActive - 1))
+          }
+        />
         <div className="grid grid-cols-1 md:grid-cols-3 gap-2 flex-grow">
           {skillsContent.map((skill, index) => {
             return (
@@ -110,7 +115,12 @@ const Skills = () => {
             );
           })}
         </div>
-        <ChevronRightIcon className="ml-2 size-10" onClick={()=>setActive((prevActive) => (prevActive === 2 ? 0 : prevActive + 1))}/>
+        <ChevronRightIcon
+          className="ml-2 size-10 text-slate-400 hover:text-slate-700"
+          onClick={() =>
+            setActive((prevActive) => (prevActive === 2 ? 0 : prevActive + 1))
+          }
+        />
       </div>
     </div>
   );
